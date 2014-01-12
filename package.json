@@ -1,0 +1,25 @@
+{
+  "name": "dom-event-stream",
+  "version": "0.0.0",
+  "description": "create a readable stream of dom events given an element",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisdickinson/dom-event-stream.git"
+  },
+  "keywords": [
+    "readable",
+    "stream",
+    "readable-stream",
+    "dom",
+    "events"
+  ],
+  "author": "Chris Dickinson <chris@neversaw.us> (http://neversaw.us/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisdickinson/dom-event-stream/issues"
+  }
+}
