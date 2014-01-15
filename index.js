@@ -33,7 +33,6 @@ function init(stream, el, eventName, options) {
     options.preventDefault : Function('return ' + !!options.preventDefault)
   stream._stopPropagation = typeof options.stopPropagation === 'function' ?
     options.stopPropagation : Function('return ' + !!options.stopPropagation)
-  stream._count = 0
 
   add(el, eventName, stream._eventListener, stream._useCapture)
 }
