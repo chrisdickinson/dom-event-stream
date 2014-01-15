@@ -1,6 +1,6 @@
 {
   "name": "dom-event-stream",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "create a readable stream of dom events given an element",
   "main": "index.js",
   "scripts": {
