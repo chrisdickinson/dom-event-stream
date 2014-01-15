@@ -4,7 +4,25 @@
   "description": "create a readable stream of dom events given an element",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "testling .",
+    "test-cov": "browserify test.js -t coverify | testling | coverify"
+  },
+  "testling": {
+    "files": [
+      "./test.js"
+    ],
+    "browsers": [
+      "ie/7..latest",
+      "firefox/16..latest",
+      "firefox/nightly",
+      "chrome/22..latest",
+      "chrome/canary",
+      "opera/12..latest",
+      "opera/next",
+      "safari/5.1..latest",
+      "ipad/5.0..latest",
+      "iphone/5.0..latest"
+    ]
   },
   "repository": {
     "type": "git",
@@ -21,5 +39,17 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/chrisdickinson/dom-event-stream/issues"
+  },
+  "dependencies": {
+    "readable-stream": "~1.1.10",
+    "add-event-listener": "0.0.1",
+    "inherits": "~2.0.1"
+  },
+  "devDependencies": {
+    "testling": "~1.5.6",
+    "browserify": "~3.19.1",
+    "tape": "~2.3.2",
+    "ever": "0.0.3",
+    "coverify": "~1.0.3"
   }
 }
